@@ -10,6 +10,14 @@ h1{
   background-color: gray;
 }
 
+/* #q2, #q3, #q4, #q5{
+  display:none;
+} */
+
+/* .hide{
+  display:none;
+} */
+
 .flex-container{
   display:flex;
   flex-flow:row;

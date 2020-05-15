@@ -14,11 +14,14 @@
           
           <p>Map Quiz. Please double click on the map <br/> the location of:</p>
 
-          <h4>Where is the src?</h4>
           <h4>Where is the Student Recreation Center?</h4>
-          <h4>Where is the plaza del Sol</h4>
-          <h4>Where is RedWood hall</h4>
-          <h4>Where is Sequoia Hall</h4>
+          <!-- <h4>correct!</h4>
+          <h4>Wrong!</h4> -->
+
+          <h4 id="q2" class="hide">Where is the Matador Soccer Game Field?</h4>
+          <h4 id="q3" class="hide">Where is the Performance Hall</h4>
+          <h4 id="q4" class="hide">Where is RedWood hall</h4>
+          <h4 id="q5" class="hide">Where is Sequoia Hall</h4>
 
 
 
@@ -28,11 +31,33 @@
         <div id="map"></div>
     
         <script>
-           const CTA = document.querySelector("#map");
-          CTA.addEventListener("click", function(){
-            alert("hello");
-          })
+          // const CTA = document.querySelector("q3");
+          // const MAP = document.querySelector("#map")
+          
+          // function reveal(e){
+          //   e.preventDefault();
+          //   CTA.classList.toggle("hide");
+          // }
 
+          // MAP.addEventListener("click",function(){alert("hello")});
+
+
+
+          // function hide(){
+          //   var x = document.getElementById("q2");
+          //   if(x.style.display === "none"){
+          //       x.style.display = "block";
+          //   } else {
+          //     x.style.display = "none";
+          //   }
+          // }
+          //  const CTA = document.querySelector("#map");
+          // CTA.addEventListener("click", hide);
+
+
+          // map.addListener('dblclick', function(){
+          //   alert("hello")
+          // })
       
           var map;
         
@@ -80,8 +105,58 @@
 
             map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
-           
+
+            
+
+            
+
+            var locations =[{
+              "id": "1",
+              "location": "plaza del sol",
+              "title": "SRC",
+              "latitude": "34.240044",
+              "longitude": " -118.524934"
+            }, {
+              "id": "2",
+              "location": "Plaza del sol",
+              "title": "Performance Hall",
+              "latitude": "34.240510",
+              "longitude": " -118.526244"
+            },
+            {
+              "id": "3",
+              "location": "Kinesiology Dept",
+              "title": "RedWood hall",
+              "latitude": "34.241778",
+              "longitude": " -118.526228"
+            }, {
+              "id": "4",
+              "location": "Health Dept",
+              "title": "Sequoia Hall",
+              "latitude": "34.240674",
+              "longitude": "  -118.527891"
+            }, {
+              "id": "5",
+              "location": "Soccer Field",
+              "title": "Matador Soccer Game Field",
+              "latitude": "34.242603",
+              "longitude": "-118.525300"
+            },
+
+          ]
+          var myLatLng = {lat: 34.240044, lng: -118.524934};
           }
+  //         var marker = new google.maps.Marker({
+  //   position:myLatLng,
+  //   map: map,
+  //   title: 'Hello World!'
+  // });
+
+  // marker.setMap(map);
+
+  //         map.addListener('click', function(){
+  //           map.setZoom(8);
+  //         })
 
          
         
