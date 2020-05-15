@@ -1,0 +1,43 @@
+html{
+  background-color: lightblue;
+}
+h1{
+  
+  text-align: center;
+}
+
+#button{
+  background-color: gray;
+}
+
+.flex-container{
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+ 
+}
+
+.flex-container > div{
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  background-color: gray;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 80%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+     
